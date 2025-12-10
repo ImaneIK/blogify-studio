@@ -6,73 +6,73 @@
 
 @layer base {
   :root {
-    /* Bento Cakes Design System - Pink/Rose Theme */
-    --background: 350 30% 92%;
-    --foreground: 350 30% 25%;
+    /* Blogify Design System - Amber Theme */
+    --background: 35 30% 92%;
+    --foreground: 35 30% 20%;
 
-    --card: 350 45% 65%;
+    --card: 35 60% 55%;
     --card-foreground: 0 0% 100%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 350 30% 25%;
+    --popover-foreground: 35 30% 20%;
 
-    /* Primary - Rose Pink */
-    --primary: 350 45% 65%;
+    /* Primary - Amber */
+    --primary: 35 80% 50%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 350 35% 88%;
+    --primary-light: 35 40% 88%;
 
-    /* Secondary - Light Pink */
-    --secondary: 350 30% 88%;
-    --secondary-foreground: 350 30% 30%;
+    /* Secondary - Light Amber */
+    --secondary: 35 30% 88%;
+    --secondary-foreground: 35 30% 25%;
 
-    /* Muted - Soft pink */
-    --muted: 350 25% 90%;
-    --muted-foreground: 350 20% 40%;
+    /* Muted - Soft amber */
+    --muted: 35 25% 90%;
+    --muted-foreground: 35 20% 40%;
 
-    /* Accent - Deep Rose */
-    --accent: 340 50% 55%;
+    /* Accent - Deep Amber/Orange */
+    --accent: 25 70% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 350 25% 82%;
-    --input: 350 25% 85%;
-    --ring: 350 45% 65%;
+    --border: 35 25% 82%;
+    --input: 35 25% 85%;
+    --ring: 35 80% 50%;
 
     --radius: 1.5rem;
 
     /* Custom tokens */
-    --surface: 350 30% 90%;
+    --surface: 35 30% 90%;
     --surface-elevated: 0 0% 100%;
-    --text-primary: 350 30% 25%;
-    --text-secondary: 350 20% 40%;
-    --text-tertiary: 350 15% 55%;
+    --text-primary: 35 30% 20%;
+    --text-secondary: 35 20% 35%;
+    --text-tertiary: 35 15% 50%;
     
     /* Ad placeholder */
-    --ad-background: 350 25% 88%;
-    --ad-border: 350 25% 80%;
+    --ad-background: 35 25% 88%;
+    --ad-border: 35 25% 80%;
 
     /* Sidebar */
-    --sidebar-background: 350 30% 90%;
-    --sidebar-foreground: 350 30% 30%;
-    --sidebar-primary: 350 45% 65%;
+    --sidebar-background: 35 30% 90%;
+    --sidebar-foreground: 35 30% 25%;
+    --sidebar-primary: 35 80% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 350 35% 85%;
-    --sidebar-accent-foreground: 350 45% 50%;
-    --sidebar-border: 350 25% 82%;
-    --sidebar-ring: 350 45% 65%;
+    --sidebar-accent: 35 35% 85%;
+    --sidebar-accent-foreground: 35 60% 40%;
+    --sidebar-border: 35 25% 82%;
+    --sidebar-ring: 35 80% 50%;
 
     /* Typography */
     --font-display: 'Playfair Display', Georgia, serif;
     --font-body: 'Inter', system-ui, sans-serif;
 
     /* Shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(350 30% 25% / 0.03);
-    --shadow-md: 0 4px 6px -1px hsl(350 30% 25% / 0.05), 0 2px 4px -2px hsl(350 30% 25% / 0.03);
-    --shadow-lg: 0 10px 15px -3px hsl(350 30% 25% / 0.05), 0 4px 6px -4px hsl(350 30% 25% / 0.03);
-    --shadow-card: 0 1px 3px 0 hsl(350 30% 25% / 0.04), 0 1px 2px -1px hsl(350 30% 25% / 0.04);
-    --shadow-card-hover: 0 10px 25px -5px hsl(350 30% 25% / 0.08), 0 8px 10px -6px hsl(350 30% 25% / 0.04);
+    --shadow-sm: 0 1px 2px 0 hsl(35 30% 20% / 0.03);
+    --shadow-md: 0 4px 6px -1px hsl(35 30% 20% / 0.05), 0 2px 4px -2px hsl(35 30% 20% / 0.03);
+    --shadow-lg: 0 10px 15px -3px hsl(35 30% 20% / 0.05), 0 4px 6px -4px hsl(35 30% 20% / 0.03);
+    --shadow-card: 0 1px 3px 0 hsl(35 30% 20% / 0.04), 0 1px 2px -1px hsl(35 30% 20% / 0.04);
+    --shadow-card-hover: 0 10px 25px -5px hsl(35 30% 20% / 0.08), 0 8px 10px -6px hsl(35 30% 20% / 0.04);
 
     /* Transitions */
     --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -81,52 +81,52 @@
   }
 
   .dark {
-    --background: 350 20% 12%;
-    --foreground: 350 15% 95%;
+    --background: 35 20% 10%;
+    --foreground: 35 15% 95%;
 
-    --card: 350 30% 20%;
-    --card-foreground: 350 15% 95%;
+    --card: 35 40% 25%;
+    --card-foreground: 35 15% 95%;
 
-    --popover: 350 20% 15%;
-    --popover-foreground: 350 15% 95%;
+    --popover: 35 20% 12%;
+    --popover-foreground: 35 15% 95%;
 
-    --primary: 350 45% 60%;
+    --primary: 35 80% 55%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 350 30% 25%;
+    --primary-light: 35 30% 20%;
 
-    --secondary: 350 20% 20%;
-    --secondary-foreground: 350 15% 90%;
+    --secondary: 35 20% 18%;
+    --secondary-foreground: 35 15% 90%;
 
-    --muted: 350 20% 18%;
-    --muted-foreground: 350 15% 60%;
+    --muted: 35 20% 15%;
+    --muted-foreground: 35 15% 60%;
 
-    --accent: 340 50% 50%;
+    --accent: 25 70% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 350 20% 25%;
-    --input: 350 20% 22%;
-    --ring: 350 45% 60%;
+    --border: 35 20% 22%;
+    --input: 35 20% 20%;
+    --ring: 35 80% 55%;
 
-    --surface: 350 20% 15%;
-    --surface-elevated: 350 20% 18%;
-    --text-primary: 350 15% 95%;
-    --text-secondary: 350 15% 70%;
-    --text-tertiary: 350 10% 55%;
+    --surface: 35 20% 12%;
+    --surface-elevated: 35 20% 16%;
+    --text-primary: 35 15% 95%;
+    --text-secondary: 35 15% 70%;
+    --text-tertiary: 35 10% 55%;
 
-    --ad-background: 350 20% 18%;
-    --ad-border: 350 20% 25%;
+    --ad-background: 35 20% 15%;
+    --ad-border: 35 20% 22%;
 
-    --sidebar-background: 350 20% 12%;
-    --sidebar-foreground: 350 15% 90%;
-    --sidebar-primary: 350 45% 60%;
+    --sidebar-background: 35 20% 10%;
+    --sidebar-foreground: 35 15% 90%;
+    --sidebar-primary: 35 80% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 350 30% 22%;
-    --sidebar-accent-foreground: 350 40% 75%;
-    --sidebar-border: 350 20% 22%;
-    --sidebar-ring: 350 45% 60%;
+    --sidebar-accent: 35 30% 18%;
+    --sidebar-accent-foreground: 35 50% 70%;
+    --sidebar-border: 35 20% 20%;
+    --sidebar-ring: 35 80% 55%;
   }
 }
 
@@ -216,6 +216,15 @@
 
   .article-content img {
     @apply rounded-lg my-8 w-full;
+  }
+
+  /* Bento Card */
+  .bento-card {
+    @apply rounded-3xl overflow-hidden transition-all duration-300;
+  }
+
+  .bento-card:hover {
+    transform: translateY(-4px);
   }
 
   /* Card hover effect */
