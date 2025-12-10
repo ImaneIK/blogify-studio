@@ -1,23 +1,23 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, ArrowLeft } from "lucide-react";
-import cakeImage1 from "@assets/stock_images/pink_bento_cake_deco_affb12db.jpg";
-import cakeImage2 from "@assets/stock_images/pink_bento_cake_deco_84c4f2a1.jpg";
-import cakeImage3 from "@assets/stock_images/pink_bento_cake_deco_763f7d0e.jpg";
-import cakeImage4 from "@assets/stock_images/pink_bento_cake_deco_ab449c6d.jpg";
-import chefImage1 from "@assets/stock_images/female_pastry_chef_w_b6c366bf.jpg";
-import chefImage2 from "@assets/stock_images/female_pastry_chef_w_c57eea45.jpg";
+import cakeImage1 from "@/assets/pink_bento_cake_deco_affb12db.jpg";
+import cakeImage2 from "@/assets/pink_bento_cake_deco_84c4f2a1.jpg";
+import cakeImage3 from "@/assets/pink_bento_cake_deco_763f7d0e.jpg";
+import cakeImage4 from "@/assets/pink_bento_cake_deco_ab449c6d.jpg";
+import chefImage1 from "@/assets/female_pastry_chef_w_b6c366bf.jpg";
+import chefImage2 from "@/assets/female_pastry_chef_w_c57eea45.jpg";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <nav className="flex items-center justify-between px-8 py-6">
+      <nav className="flex items-center justify-between gap-4 px-8 py-6">
         <div className="flex items-center gap-2">
           <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
             <span className="font-display text-primary text-sm">BC</span>
           </div>
         </div>
-        <div className="flex items-center gap-8">
+        <div className="flex items-center gap-8 flex-wrap">
           <Link to="/about" className="text-foreground hover:text-primary transition-colors" data-testid="link-about">
             About us
           </Link>
@@ -110,7 +110,7 @@ const Index = () => {
           </div>
 
           <div className="col-span-12 lg:col-span-8">
-            <div className="bg-card rounded-3xl p-6 grid grid-cols-12 gap-4">
+            <div className="bg-rose-700 dark:bg-rose-800 rounded-3xl p-6 grid grid-cols-12 gap-4">
               <div className="col-span-12 lg:col-span-4">
                 <div className="rounded-2xl overflow-hidden aspect-square">
                   <img 
@@ -122,11 +122,11 @@ const Index = () => {
                 </div>
               </div>
               <div className="col-span-12 lg:col-span-8 flex flex-col justify-center">
-                <h3 className="font-display text-4xl text-card-foreground mb-4">Kristina</h3>
-                <p className="text-card-foreground/80 leading-relaxed mb-6">
+                <h3 className="font-display text-4xl text-white mb-4">Kristina</h3>
+                <p className="text-white leading-relaxed mb-6">
                   Meet Kristina, our expert chef with over 5 years of experience, who has enhanced her skills through various pastry courses, including a qualification from the renowned Le Cordon Bleu.
                 </p>
-                <Button variant="outline" className="rounded-full w-fit border-card-foreground/30 text-card-foreground" data-testid="button-contact-kristina">
+                <Button variant="outline" className="rounded-full w-fit border-white/50 text-white bg-white/10" data-testid="button-contact-kristina">
                   CONTACT
                 </Button>
               </div>
@@ -144,12 +144,13 @@ const Index = () => {
                   data-testid="img-kristina-card"
                 />
               </div>
-              <button 
-                className="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-primary flex items-center justify-center"
+              <Button 
+                size="icon"
+                className="absolute bottom-4 right-4 rounded-full"
                 data-testid="button-kristina-arrow"
               >
-                <ArrowRight className="w-5 h-5 text-primary-foreground" />
-              </button>
+                <ArrowRight className="w-5 h-5" />
+              </Button>
             </div>
           </div>
 
@@ -164,28 +165,29 @@ const Index = () => {
                   data-testid="img-milana-card"
                 />
               </div>
-              <button 
-                className="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-primary flex items-center justify-center"
+              <Button 
+                size="icon"
+                className="absolute bottom-4 right-4 rounded-full"
                 data-testid="button-milana-arrow"
               >
-                <ArrowRight className="w-5 h-5 text-primary-foreground" />
-              </button>
+                <ArrowRight className="w-5 h-5" />
+              </Button>
             </div>
           </div>
 
           <div className="col-span-12 lg:col-span-6 flex items-end justify-center gap-4 pb-8">
-            <button className="w-10 h-10 rounded-full border border-border flex items-center justify-center" data-testid="button-carousel-prev">
-              <ArrowLeft className="w-5 h-5 text-muted-foreground" />
-            </button>
+            <Button size="icon" variant="outline" className="rounded-full" data-testid="button-carousel-prev">
+              <ArrowLeft className="w-5 h-5" />
+            </Button>
             <div className="flex gap-2">
               <div className="w-2 h-2 rounded-full bg-muted-foreground/30"></div>
               <div className="w-2 h-2 rounded-full bg-foreground"></div>
               <div className="w-2 h-2 rounded-full bg-muted-foreground/30"></div>
               <div className="w-2 h-2 rounded-full bg-muted-foreground/30"></div>
             </div>
-            <button className="w-10 h-10 rounded-full border border-border flex items-center justify-center" data-testid="button-carousel-next">
-              <ArrowRight className="w-5 h-5 text-muted-foreground" />
-            </button>
+            <Button size="icon" variant="outline" className="rounded-full" data-testid="button-carousel-next">
+              <ArrowRight className="w-5 h-5" />
+            </Button>
           </div>
         </section>
       </main>
