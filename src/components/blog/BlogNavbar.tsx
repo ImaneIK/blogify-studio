@@ -1,13 +1,14 @@
 import { Link, useLocation } from "react-router-dom";
-import { Search, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { name: "Home", href: "/" },
-  { name: "Categories", href: "/categories" },
-  { name: "About", href: "/about" },
+  { name: "About us", href: "/about" },
+  { name: "Features", href: "/categories" },
+  { name: "Blog", href: "/articles" },
+  { name: "Pricing", href: "/auth" },
 ];
 
 export function BlogNavbar() {
@@ -15,24 +16,26 @@ export function BlogNavbar() {
   const location = useLocation();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <nav className="container mx-auto flex h-16 items-center justify-between px-4 lg:px-8">
+    <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <nav className="flex items-center justify-between gap-4 px-6 md:px-8 py-6 max-w-7xl mx-auto">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <span className="font-display text-2xl font-bold text-primary">Blogify</span>
+          <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
+            <span className="font-display text-primary text-sm font-semibold">B</span>
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden md:flex items-center gap-1 bg-surface-elevated rounded-full px-2 py-1">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               to={link.href}
               className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
+                "px-4 py-2 text-sm transition-colors rounded-full",
                 location.pathname === link.href
-                  ? "text-primary"
-                  : "text-muted-foreground"
+                  ? "text-primary bg-primary/10"
+                  : "text-foreground hover:text-primary"
               )}
             >
               {link.name}
@@ -42,14 +45,8 @@ export function BlogNavbar() {
 
         {/* Right side */}
         <div className="flex items-center gap-4">
-          <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-foreground">
-            <Search className="h-5 w-5" />
-          </Button>
-          
           <Link to="/auth">
-            <Button variant="default" size="sm" className="hidden md:flex">
-              Sign In
-            </Button>
+            <Button className="rounded-full">Get Started</Button>
           </Link>
 
           {/* Mobile menu button */}
@@ -67,28 +64,23 @@ export function BlogNavbar() {
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
         <div className="border-b border-border bg-background md:hidden">
-          <div className="container mx-auto px-4 py-4">
-            <div className="flex flex-col gap-4">
+          <div className="px-6 py-4">
+            <div className="flex flex-col gap-2">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   to={link.href}
                   className={cn(
-                    "text-sm font-medium transition-colors hover:text-primary",
+                    "px-4 py-2 text-sm transition-colors rounded-lg",
                     location.pathname === link.href
-                      ? "text-primary"
-                      : "text-muted-foreground"
+                      ? "text-primary bg-primary/10"
+                      : "text-foreground hover:text-primary hover:bg-surface-elevated"
                   )}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.name}
                 </Link>
               ))}
-              <Link to="/auth" onClick={() => setMobileMenuOpen(false)}>
-                <Button variant="default" size="sm" className="w-full">
-                  Sign In
-                </Button>
-              </Link>
             </div>
           </div>
         </div>
