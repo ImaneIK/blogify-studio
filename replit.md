@@ -43,6 +43,11 @@ The application runs on port 5000 using `npm run dev`.
 - `/dashboard/settings` - Settings
 
 ## Recent Changes
+- December 10, 2025: Homepage redesigned to bento cake masterclass theme
+  - Updated color scheme to pink/rose theme
+  - Created new bento-style grid layout for hero section
+  - Added "Meet your sweet mentors" section with chef profiles
+  - Added stock images for cakes and pastry chefs
 - December 10, 2025: Imported from Lovable to Replit environment
   - Updated Vite config to run on port 5000
   - Configured allowedHosts for Replit proxy
