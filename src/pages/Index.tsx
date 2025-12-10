@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, PenLine, Users, TrendingUp, Sparkles, BookOpen, MessageSquare } from "lucide-react";
+import { BlogNavbar } from "@/components/blog/BlogNavbar";
 import blogImage1 from "@/assets/blog-thumb-1.jpg";
 import blogImage2 from "@/assets/blog-thumb-2.jpg";
 import blogImage3 from "@/assets/blog-thumb-3.jpg";
@@ -9,31 +10,7 @@ import blogImage4 from "@/assets/blog-thumb-4.jpg";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
-      <nav className="flex items-center justify-between gap-4 px-8 py-6">
-        <div className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
-            <span className="font-display text-primary text-sm font-semibold">B</span>
-          </div>
-        </div>
-        <div className="hidden md:flex items-center gap-1 bg-surface-elevated rounded-full px-2 py-1">
-          <Link to="/about" className="px-4 py-2 text-foreground hover:text-primary transition-colors text-sm">
-            About us
-          </Link>
-          <Link to="/categories" className="px-4 py-2 text-foreground hover:text-primary transition-colors text-sm">
-            Features
-          </Link>
-          <Link to="/articles" className="px-4 py-2 text-foreground hover:text-primary transition-colors text-sm">
-            Blog
-          </Link>
-          <Link to="/auth" className="px-4 py-2 text-foreground hover:text-primary transition-colors text-sm">
-            Pricing
-          </Link>
-        </div>
-        <Link to="/auth">
-          <Button className="rounded-full">Get Started</Button>
-        </Link>
-      </nav>
+      <BlogNavbar />
 
       <main className="px-6 md:px-8 py-8 max-w-7xl mx-auto">
         {/* Hero Section - Bento Grid */}
