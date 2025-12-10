@@ -6,73 +6,73 @@
 
 @layer base {
   :root {
-    /* Blogify Design System - Light Mode */
-    --background: 0 0% 100%;
-    --foreground: 220 20% 15%;
+    /* Bento Cakes Design System - Pink/Rose Theme */
+    --background: 350 30% 92%;
+    --foreground: 350 30% 25%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 20% 15%;
+    --card: 350 45% 65%;
+    --card-foreground: 0 0% 100%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 15%;
+    --popover-foreground: 350 30% 25%;
 
-    /* Primary - Soft Teal */
-    --primary: 170 60% 40%;
+    /* Primary - Rose Pink */
+    --primary: 350 45% 65%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 170 55% 95%;
+    --primary-light: 350 35% 88%;
 
-    /* Secondary - Warm Gray */
-    --secondary: 220 10% 96%;
-    --secondary-foreground: 220 20% 25%;
+    /* Secondary - Light Pink */
+    --secondary: 350 30% 88%;
+    --secondary-foreground: 350 30% 30%;
 
-    /* Muted - Subtle grays */
-    --muted: 220 15% 95%;
-    --muted-foreground: 220 10% 45%;
+    /* Muted - Soft pink */
+    --muted: 350 25% 90%;
+    --muted-foreground: 350 20% 40%;
 
-    /* Accent - Coral */
-    --accent: 15 80% 60%;
+    /* Accent - Deep Rose */
+    --accent: 340 50% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 90%;
-    --input: 220 15% 90%;
-    --ring: 170 60% 40%;
+    --border: 350 25% 82%;
+    --input: 350 25% 85%;
+    --ring: 350 45% 65%;
 
-    --radius: 0.75rem;
+    --radius: 1.5rem;
 
-    /* Custom tokens for blog */
-    --surface: 220 15% 98%;
+    /* Custom tokens */
+    --surface: 350 30% 90%;
     --surface-elevated: 0 0% 100%;
-    --text-primary: 220 20% 15%;
-    --text-secondary: 220 10% 45%;
-    --text-tertiary: 220 10% 60%;
+    --text-primary: 350 30% 25%;
+    --text-secondary: 350 20% 40%;
+    --text-tertiary: 350 15% 55%;
     
     /* Ad placeholder */
-    --ad-background: 220 15% 94%;
-    --ad-border: 220 15% 88%;
+    --ad-background: 350 25% 88%;
+    --ad-border: 350 25% 80%;
 
     /* Sidebar */
-    --sidebar-background: 220 15% 98%;
-    --sidebar-foreground: 220 20% 25%;
-    --sidebar-primary: 170 60% 40%;
+    --sidebar-background: 350 30% 90%;
+    --sidebar-foreground: 350 30% 30%;
+    --sidebar-primary: 350 45% 65%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 170 55% 95%;
-    --sidebar-accent-foreground: 170 60% 30%;
-    --sidebar-border: 220 15% 90%;
-    --sidebar-ring: 170 60% 40%;
+    --sidebar-accent: 350 35% 85%;
+    --sidebar-accent-foreground: 350 45% 50%;
+    --sidebar-border: 350 25% 82%;
+    --sidebar-ring: 350 45% 65%;
 
     /* Typography */
     --font-display: 'Playfair Display', Georgia, serif;
     --font-body: 'Inter', system-ui, sans-serif;
 
     /* Shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(220 20% 15% / 0.03);
-    --shadow-md: 0 4px 6px -1px hsl(220 20% 15% / 0.05), 0 2px 4px -2px hsl(220 20% 15% / 0.03);
-    --shadow-lg: 0 10px 15px -3px hsl(220 20% 15% / 0.05), 0 4px 6px -4px hsl(220 20% 15% / 0.03);
-    --shadow-card: 0 1px 3px 0 hsl(220 20% 15% / 0.04), 0 1px 2px -1px hsl(220 20% 15% / 0.04);
-    --shadow-card-hover: 0 10px 25px -5px hsl(220 20% 15% / 0.08), 0 8px 10px -6px hsl(220 20% 15% / 0.04);
+    --shadow-sm: 0 1px 2px 0 hsl(350 30% 25% / 0.03);
+    --shadow-md: 0 4px 6px -1px hsl(350 30% 25% / 0.05), 0 2px 4px -2px hsl(350 30% 25% / 0.03);
+    --shadow-lg: 0 10px 15px -3px hsl(350 30% 25% / 0.05), 0 4px 6px -4px hsl(350 30% 25% / 0.03);
+    --shadow-card: 0 1px 3px 0 hsl(350 30% 25% / 0.04), 0 1px 2px -1px hsl(350 30% 25% / 0.04);
+    --shadow-card-hover: 0 10px 25px -5px hsl(350 30% 25% / 0.08), 0 8px 10px -6px hsl(350 30% 25% / 0.04);
 
     /* Transitions */
     --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -81,52 +81,52 @@
   }
 
   .dark {
-    --background: 220 20% 10%;
-    --foreground: 220 15% 95%;
+    --background: 350 20% 12%;
+    --foreground: 350 15% 95%;
 
-    --card: 220 20% 12%;
-    --card-foreground: 220 15% 95%;
+    --card: 350 30% 20%;
+    --card-foreground: 350 15% 95%;
 
-    --popover: 220 20% 12%;
-    --popover-foreground: 220 15% 95%;
+    --popover: 350 20% 15%;
+    --popover-foreground: 350 15% 95%;
 
-    --primary: 170 55% 50%;
-    --primary-foreground: 220 20% 10%;
-    --primary-light: 170 40% 20%;
+    --primary: 350 45% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 350 30% 25%;
 
-    --secondary: 220 20% 18%;
-    --secondary-foreground: 220 15% 90%;
+    --secondary: 350 20% 20%;
+    --secondary-foreground: 350 15% 90%;
 
-    --muted: 220 20% 18%;
-    --muted-foreground: 220 10% 60%;
+    --muted: 350 20% 18%;
+    --muted-foreground: 350 15% 60%;
 
-    --accent: 15 70% 55%;
+    --accent: 340 50% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 20% 20%;
-    --input: 220 20% 20%;
-    --ring: 170 55% 50%;
+    --border: 350 20% 25%;
+    --input: 350 20% 22%;
+    --ring: 350 45% 60%;
 
-    --surface: 220 20% 12%;
-    --surface-elevated: 220 20% 15%;
-    --text-primary: 220 15% 95%;
-    --text-secondary: 220 10% 65%;
-    --text-tertiary: 220 10% 50%;
+    --surface: 350 20% 15%;
+    --surface-elevated: 350 20% 18%;
+    --text-primary: 350 15% 95%;
+    --text-secondary: 350 15% 70%;
+    --text-tertiary: 350 10% 55%;
 
-    --ad-background: 220 20% 15%;
-    --ad-border: 220 20% 22%;
+    --ad-background: 350 20% 18%;
+    --ad-border: 350 20% 25%;
 
-    --sidebar-background: 220 20% 10%;
-    --sidebar-foreground: 220 15% 90%;
-    --sidebar-primary: 170 55% 50%;
-    --sidebar-primary-foreground: 220 20% 10%;
-    --sidebar-accent: 170 40% 18%;
-    --sidebar-accent-foreground: 170 55% 70%;
-    --sidebar-border: 220 20% 18%;
-    --sidebar-ring: 170 55% 50%;
+    --sidebar-background: 350 20% 12%;
+    --sidebar-foreground: 350 15% 90%;
+    --sidebar-primary: 350 45% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 350 30% 22%;
+    --sidebar-accent-foreground: 350 40% 75%;
+    --sidebar-border: 350 20% 22%;
+    --sidebar-ring: 350 45% 60%;
   }
 }
 
