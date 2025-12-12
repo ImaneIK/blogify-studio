@@ -6,62 +6,62 @@
 
 @layer base {
   :root {
-    /* Blogify Design System - Amber Theme */
-    --background: 35 30% 92%;
-    --foreground: 35 30% 20%;
+    /* Blogify Design System - Light Amber Theme */
+    --background: 40 30% 96%;
+    --foreground: 35 25% 18%;
 
-    --card: 35 60% 55%;
-    --card-foreground: 0 0% 100%;
+    --card: 40 50% 92%;
+    --card-foreground: 35 25% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 35 30% 20%;
+    --popover-foreground: 35 25% 18%;
 
-    /* Primary - Amber */
-    --primary: 35 80% 50%;
-    --primary-foreground: 0 0% 100%;
-    --primary-light: 35 40% 88%;
+    /* Primary - Light Amber */
+    --primary: 40 90% 60%;
+    --primary-foreground: 35 25% 15%;
+    --primary-light: 40 50% 92%;
 
-    /* Secondary - Light Amber */
-    --secondary: 35 30% 88%;
-    --secondary-foreground: 35 30% 25%;
+    /* Secondary - Soft Cream */
+    --secondary: 40 35% 94%;
+    --secondary-foreground: 35 25% 25%;
 
-    /* Muted - Soft amber */
-    --muted: 35 25% 90%;
-    --muted-foreground: 35 20% 40%;
+    /* Muted - Warm Grey */
+    --muted: 40 20% 92%;
+    --muted-foreground: 35 15% 40%;
 
-    /* Accent - Deep Amber/Orange */
-    --accent: 25 70% 45%;
-    --accent-foreground: 0 0% 100%;
+    /* Accent - Warm Amber */
+    --accent: 35 85% 65%;
+    --accent-foreground: 35 25% 15%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 35 25% 82%;
-    --input: 35 25% 85%;
-    --ring: 35 80% 50%;
+    --border: 40 20% 85%;
+    --input: 40 20% 90%;
+    --ring: 40 90% 60%;
 
     --radius: 1.5rem;
 
     /* Custom tokens */
-    --surface: 35 30% 90%;
+    --surface: 40 25% 94%;
     --surface-elevated: 0 0% 100%;
-    --text-primary: 35 30% 20%;
-    --text-secondary: 35 20% 35%;
-    --text-tertiary: 35 15% 50%;
+    --text-primary: 35 25% 18%;
+    --text-secondary: 35 15% 35%;
+    --text-tertiary: 35 10% 50%;
     
     /* Ad placeholder */
-    --ad-background: 35 25% 88%;
-    --ad-border: 35 25% 80%;
+    --ad-background: 40 25% 92%;
+    --ad-border: 40 20% 85%;
 
     /* Sidebar */
-    --sidebar-background: 35 30% 90%;
-    --sidebar-foreground: 35 30% 25%;
-    --sidebar-primary: 35 80% 50%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 35 35% 85%;
-    --sidebar-accent-foreground: 35 60% 40%;
-    --sidebar-border: 35 25% 82%;
-    --sidebar-ring: 35 80% 50%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 35 25% 25%;
+    --sidebar-primary: 40 90% 60%;
+    --sidebar-primary-foreground: 35 25% 15%;
+    --sidebar-accent: 40 40% 94%;
+    --sidebar-accent-foreground: 35 50% 35%;
+    --sidebar-border: 40 20% 88%;
+    --sidebar-ring: 40 90% 60%;
 
     /* Typography */
     --font-display: 'Playfair Display', Georgia, serif;
